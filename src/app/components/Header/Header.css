@@ -1,0 +1,24 @@
+header {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 80px;
+    gap: 40px;
+}
+
+header img {
+    width: 300px;
+    height: 150px;
+    filter: brightness(0) invert(1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 10px 50px;
+    border-radius: 25px;
+    background: white;
+}
