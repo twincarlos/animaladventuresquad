@@ -17,3 +17,7 @@ a {
 .home-component {
   width: 100%;
 }
+
+* {
+  margin: 0;
+}
