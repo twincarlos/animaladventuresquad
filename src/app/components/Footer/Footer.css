@@ -1,5 +1,5 @@
 footer {
-    margin-top: 300px;
+    position: relative;
 }
 
 footer img {
@@ -10,12 +10,13 @@ footer img {
 }
 
 .footer-container {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 732px;
+    bottom: -5px;
     padding-bottom: 80px;
     padding-left: 300px;
     background-image: linear-gradient(to bottom, transparent, var(--primary-color));
+    width: 100%;
 }
 
 .footer-top-container {

@@ -5,10 +5,7 @@ import homeComponentImg from "@/app/assets/home-component-3-img.png";
 export default function HomeComponent3() {
     return (
         <section className="home-component home-component-3">
-            <div className="container">
-                <p className="title">LOCATION(S)</p>
-                <p className="sub-title">(Headquarters and any other locations)</p>
-            </div>
+            <p className="title">STATES WE SERVICE</p>
             <Image src={homeComponentImg} />
         </section>
     );

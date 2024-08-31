@@ -25,7 +25,6 @@ export default function Footer() {
                 </div>
                 <p className="footer-copyright">2024 CristianSarchy | animaladventuresquad.com | AnimalAdventure Squad LLC. All rights</p>
             </div>
-            <div className="gradient" />
             <Image src={footerImg} />
         </footer>
     );
