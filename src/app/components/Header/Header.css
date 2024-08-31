@@ -1,5 +1,6 @@
 header {
     position: absolute;
+    top: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;

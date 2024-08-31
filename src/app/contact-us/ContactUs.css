@@ -1,0 +1,16 @@
+.contact-us {
+    margin-top: 250px;
+}
+
+.contact-us .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+}
+
+.contact-us .container p {
+    width: 560px;
+}

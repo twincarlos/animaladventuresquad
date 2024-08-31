@@ -36,6 +36,7 @@
     padding: 5px;
     background: transparent;
     width: 350px;
+    height: auto;
 }
 
 .widget button {

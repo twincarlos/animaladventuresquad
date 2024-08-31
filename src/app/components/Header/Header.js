@@ -11,7 +11,7 @@ export default function Header() {
                 <Link href={"/"}>About</Link>
                 <Link href={"/"}>Animals</Link>
                 <Link href={"/"}>Programs</Link>
-                <Link href={"/"}>Contact Us</Link>
+                <Link href={"/contact-us"}>Contact Us</Link>
             </nav>
         </header>
     );
