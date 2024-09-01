@@ -97,6 +97,7 @@ nav {
         font-weight: 500;
         right: 20px;
         top: 100px;
+        box-shadow: 0 10px 5px #00000029;
     }
 
 }

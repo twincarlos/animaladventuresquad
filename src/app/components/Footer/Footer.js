@@ -23,7 +23,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <p className="footer-copyright">2024 CristianSarchy | animaladventuresquad.com | AnimalAdventure Squad LLC. All rights</p>
+                <p className="footer-copyright">2024 AAS | animaladventuresquad.com AnimalAdventure Squad LLC. All rights</p>
             </div>
             <Image src={footerImg} />
         </footer>

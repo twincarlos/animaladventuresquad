@@ -90,6 +90,7 @@ footer img {
 
     .footer-top-container {
         justify-content: center;
+        font-size: 0.8em;
     }
 
     .footer-container {
@@ -98,6 +99,7 @@ footer img {
         justify-content: center;
         align-items: center;
         padding: 20px 0;
+        gap: 20px;
     }
 
     footer img {
@@ -106,7 +108,7 @@ footer img {
 
     .footer-copyright {
         margin: 0;
-        max-width: 300px;
+        max-width: 310px;
         text-align: center;
     }
 }
