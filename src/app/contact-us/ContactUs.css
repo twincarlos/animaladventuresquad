@@ -41,7 +41,7 @@
     }
 
     .contact-us .container p {
-        width: 400px;
+        width: 300px;
     }
 
     .contact-us-form-header h1 {
@@ -62,6 +62,7 @@
 
     .contact-us label {
         width: 80%;
+        align-items: center;
     }
 
     .contact-us label.input-text {
@@ -77,7 +78,7 @@
     }
 
     .contact-us .main-header {
-        gap: 100px;
+        gap: 50px;
     }
 
     .contact-us .container {

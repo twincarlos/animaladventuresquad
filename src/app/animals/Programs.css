@@ -103,7 +103,7 @@ img.animal.ambassador.ambassador-2 {
 @media screen and (max-width: 650px) {
     .programs h1 {
         width: 80%;
-        font-size: 30px;
+        font-size: 2em;
     }
 
     .ambassadors-imgs {
@@ -148,5 +148,11 @@ img.animal.ambassador.ambassador-2 {
 
     .ambassador-container-2 {
         margin-top: -80px;
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+
+    img.animal.ambassador.ambassador-2 {
+        margin: 0;
     }
 }
