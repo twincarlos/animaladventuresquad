@@ -57,3 +57,11 @@
 .home-component-6 .text-box-text {
     width: 362px;
 }
+
+@media screen and (max-width: 650px) {
+    .home-component-6 .title {
+        font-size: 1.5em;
+        text-align: center;
+        width: 70%;
+    }
+}

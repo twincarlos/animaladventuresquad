@@ -8,7 +8,6 @@ import animal1 from "@/app/assets/animal-1.png";
 import animal2 from "@/app/assets/animal-2.png";
 import animal3 from "@/app/assets/animal-3.png";
 
-
 export default function Programs() {
     return (
         <main className="programs">
@@ -43,7 +42,7 @@ export default function Programs() {
                 </div>
             </section>
             <section className="programs-animal-imgs">
-                <div className="ambassadors-container main-body">
+                <div className="Large ambassadors-container main-body">
                     <div className="ambassadors-imgs">
                         <Image className="animal ambassador ambassador-1" src={animal1} />
                         <Image className="animal ambassador ambassador-2" src={animal2} />
@@ -52,6 +51,20 @@ export default function Programs() {
                     <div className="animals-names">
                         <p className="ambassador-name animal-name-1">3 Banded Armadillo</p>
                         <p className="ambassador-name animal-name-2">Spectacled Owl</p>
+                        <p className="ambassador-name animal-name-3">Axolotl</p>
+                    </div>
+                </div>
+                <div className="Small ambassadors-container main-body">
+                    <div className="animal-container">
+                        <Image className="animal ambassador ambassador-1" src={animal1} />
+                        <p className="ambassador-name animal-name-1">3 Banded Armadillo</p>
+                    </div>
+                    <div className="animal-container">
+                        <Image className="animal ambassador ambassador-2" src={animal2} />
+                        <p className="ambassador-name animal-name-2">Spectacled Owl</p>
+                    </div>
+                    <div className="animal-container">
+                        <Image className="animal ambassador ambassador-3" src={animal3} />
                         <p className="ambassador-name animal-name-3">Axolotl</p>
                     </div>
                 </div>

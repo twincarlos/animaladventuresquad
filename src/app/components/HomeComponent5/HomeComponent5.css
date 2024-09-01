@@ -41,3 +41,11 @@
     max-width: 700px;
     text-align: center;
 }
+
+@media screen and (max-width: 650px) {
+    .home-component-5 .title {
+        font-size: 1.5em;
+        text-align: center;
+        width: 70%;
+    }
+}

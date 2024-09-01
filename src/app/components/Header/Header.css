@@ -7,7 +7,6 @@ header {
     padding: 30px 80px;
     gap: 40px;
     background-image: linear-gradient(to top, transparent, var(--primary-color));
-    width: 100%;
 }
 
 header img {
@@ -24,4 +23,59 @@ nav {
     padding: 10px 50px;
     border-radius: 25px;
     background: white;
+}
+
+.Small {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .Small {
+        display: flex !important;
+        min-width: 400px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Large {
+        display: none;
+    }
+
+    .mobile-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .burguer-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile-menu-overlay {
+        width: 100%;
+        height: 150dvh;
+        position: absolute;
+        backdrop-filter: blur(7px);
+    }
+
+    .mobile-menu {
+        background-image: url("../../assets/mobile-menu-background.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        z-index: 1;
+        width: 200px;
+        height: 300px;
+        background-size: cover;
+        border-radius: 25px;
+        gap: 20px;
+        padding: 30px;
+        font-size: 25px;
+        font-weight: 500;
+        right: 20px;
+        top: 100px;
+    }
+
 }

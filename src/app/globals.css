@@ -7,6 +7,11 @@
   --tertiary-color: #ECCBD2;
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-size: 20px;
@@ -85,6 +90,7 @@ input[type="text"] {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .main-title {

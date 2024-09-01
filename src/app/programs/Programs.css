@@ -97,3 +97,40 @@ img.animal.ambassador.ambassador-2 {
     max-width: 710px;
     text-align: center;
 }
+
+.Small {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .ambassadors-imgs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ambassador {
+        width: 400px !important;
+    }
+
+    .programs-animals-names {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .Large {
+        display: none;
+    }
+
+    .Small {
+        display: flex;
+    }
+
+    .programs-footer p  {
+        width: 90%;
+    }
+}

@@ -54,3 +54,12 @@
     margin-top: 30px;
     font-size: 0.8em;
 }
+
+@media screen and (max-width: 650px) {
+    .widget {
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        border-radius: 25px;
+    }
+}
