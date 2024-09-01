@@ -1,10 +1,13 @@
+"use client";
 import "./Footer.css";
 import Link from "next/link";
 import Image from "next/image";
 import footerImg from "@/app/assets/footer-img.png";
 import footerLogo from "@/app/assets/header-logo.png";
+import { useSection } from "@/app/context/SectionContext";
 
 export default function Footer() {
+    const { section, setSection } = useSection();
     return (
         <footer>
             <div className="footer-container">
@@ -12,9 +15,10 @@ export default function Footer() {
                     <Image src={footerLogo} />
                     <div className="footer-links">
                         <div className="footer-link-column">
-                            <Link href={"/"}>About Us</Link>
-                            <Link href={"/"}>Animals</Link>
-                            <Link href={"/"}>Programs</Link>
+                            <Link onClick={() => setSection(section === "about-1" ? "about-2" : "about-1")} href={"/"}>About Us</Link>
+                            <Link onClick={() => setSection("")} href={"/"}>Animals</Link>
+                            <Link onClick={() => setSection(section === "programs-1" ? "programs-2" : "programs-1")} href={"/"}>Programs</Link>
+                            <Link onClick={() => setSection("")} href={"/"}>Contact Us</Link>
                         </div>
                         <div className="footer-link-column">
                             <Link href={"/"}>Privacy policy</Link>
