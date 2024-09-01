@@ -6,29 +6,51 @@ import headerLogo from "@/app/assets/header-logo.png";
 import headerLogoMobile from "@/app/assets/logo-mobile.png";
 import burguerIcon from "@/app/assets/burguer-icon.png";
 import { useState } from "react";
+import { useSection } from "@/app/context/SectionContext";
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
+    const { setSection } = useSection();
 
     return (
         <>
             {showMenu && (
                 <div className="mobile-menu-overlay">
                     <div className="mobile-menu">
-                        <Link onClick={() => setShowMenu(false)} href={"/#about"}>About</Link>
-                        <Link onClick={() => setShowMenu(false)} href={"/animals"}>Animals</Link>
-                        <Link onClick={() => setShowMenu(false)} href={"/#programs"}>Programs</Link>
-                        <Link onClick={() => setShowMenu(false)} href={"/contact-us"}>Contact Us</Link>
+                        <Link onClick={() => {
+                            setSection("about")
+                            setShowMenu(false);
+                        }} href={"/#about"}>About</Link>
+                        <Link onClick={() => {
+                            setSection("")
+                            setShowMenu(false);
+                        }} href={"/animals"}>Animals</Link>
+                        <Link onClick={() => {
+                            setSection("programs")
+                            setShowMenu(false);
+                        }} href={"/#programs"}>Programs</Link>
+                        <Link onClick={() => {
+                            setSection("")
+                            setShowMenu(false);
+                        }} href={"/contact-us"}>Contact Us</Link>
                     </div>
                 </div>
             )}
             <header className="Large">
                 <Link href={"/"}><Image alt="Animal Adventure Squad Logo" src={headerLogo} /></Link>
                 <nav>
-                    <Link href={"/#about"}>About</Link>
-                    <Link href={"/animals"}>Animals</Link>
-                    <Link href={"/#programs"}>Programs</Link>
-                    <Link href={"/contact-us"}>Contact Us</Link>
+                    <Link onClick={() => {
+                        setSection("about");
+                    }} href={"/#about"}>About</Link>
+                    <Link onClick={() => {
+                        setSection("");
+                    }} href={"/animals"}>Animals</Link>
+                    <Link onClick={() => {
+                        setSection("programs");
+                    }} href={"/#programs"}>Programs</Link>
+                    <Link onClick={() => {
+                        setSection("");
+                    }} href={"/contact-us"}>Contact Us</Link>
                 </nav>
             </header>
             <header className="Small">

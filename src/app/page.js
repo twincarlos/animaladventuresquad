@@ -7,19 +7,18 @@ import HomeComponent5 from "./components/HomeComponent5/HomeComponent5";
 import HomeComponent6 from "./components/HomeComponent6/HomeComponent6";
 import HomeComponent7 from "./components/HomeComponent7/HomeComponent7";
 import { useEffect } from "react";
+import { useSection } from "./context/SectionContext";
 
 export default function Home() {
+  const { section } = useSection();
   useEffect(() => {
-    const href = window.location.href.substring(
-      window.location.href.lastIndexOf('#') + 1
-    );
-    if (href === "about") {
+    if (section === "about") {
       document.getElementsByClassName("home-component-2")[0].scrollIntoView({ behavior: "smooth", block: "center" });
     };
-    if (href === "programs") {
+    if (section === "programs") {
       document.getElementsByClassName("home-component-5")[0].scrollIntoView({ behavior: "smooth", block: "center" });
     };
-  }, []);
+  }, [section]);
   return (
     <main>
       <HomeComponent1 />
