@@ -162,4 +162,8 @@ img.animal.ambassador.ambassador-2 {
     img.animal.ambassador.ambassador-2 {
         margin: 0;
     }
+
+    .programs-ambassadors.main-body {
+        margin: 50px 0 100px 0;
+    }
 }
