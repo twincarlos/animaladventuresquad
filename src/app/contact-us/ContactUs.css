@@ -71,4 +71,12 @@
     label:not(.input-text) input {
         height: 45px;
     }
+
+    .contact-us {
+        margin-top: 150px;
+    }
+
+    .main-header {
+        gap: 100px;
+    }
 }

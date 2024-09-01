@@ -15,15 +15,15 @@ export default function Header() {
             {showMenu && (
                 <div className="mobile-menu-overlay">
                     <div className="mobile-menu">
-                        <Link href={"/"}>About</Link>
-                        <Link href={"/"}>Animals</Link>
-                        <Link href={"/programs"}>Programs</Link>
-                        <Link href={"/contact-us"}>Contact Us</Link>
+                        <Link onClick={() => setShowMenu(false)} href={"/"}>About</Link>
+                        <Link onClick={() => setShowMenu(false)} href={"/"}>Animals</Link>
+                        <Link onClick={() => setShowMenu(false)} href={"/programs"}>Programs</Link>
+                        <Link onClick={() => setShowMenu(false)} href={"/contact-us"}>Contact Us</Link>
                     </div>
                 </div>
             )}
             <header className="Large">
-                <Image alt="Animal Adventure Squad Logo" src={headerLogo} />
+                <Link href={"/"}><Image alt="Animal Adventure Squad Logo" src={headerLogo} /></Link>
                 <nav>
                     <Link href={"/"}>About</Link>
                     <Link href={"/"}>Animals</Link>
@@ -33,7 +33,7 @@ export default function Header() {
             </header>
             <header className="Small">
                 <div className="header">
-                    <Image className="mobile-logo" src={headerLogoMobile} />
+                    <Link href={"/"}><Image className="mobile-logo" src={headerLogoMobile} /></Link>
                     <Image onClick={() => setShowMenu(!showMenu)} className="burguer-icon" src={burguerIcon} />
                 </div>
             </header>
