@@ -10,7 +10,7 @@ import { useSection } from "@/app/context/SectionContext";
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
-    const { setSection } = useSection();
+    const { section, setSection } = useSection();
 
     return (
         <>
@@ -18,7 +18,7 @@ export default function Header() {
                 <div className="mobile-menu-overlay">
                     <div className="mobile-menu">
                         <Link onClick={() => {
-                            setSection("about")
+                            setSection(section === "about-1" ? "about-2" : "about-1");
                             setShowMenu(false);
                         }} href={"/#about"}>About</Link>
                         <Link onClick={() => {
@@ -26,7 +26,7 @@ export default function Header() {
                             setShowMenu(false);
                         }} href={"/animals"}>Animals</Link>
                         <Link onClick={() => {
-                            setSection("programs")
+                            setSection(section === "programs-1" ? "programs-2" : "programs-1");
                             setShowMenu(false);
                         }} href={"/#programs"}>Programs</Link>
                         <Link onClick={() => {

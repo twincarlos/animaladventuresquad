@@ -119,7 +119,7 @@ img.animal.ambassador.ambassador-2 {
     }
 
     .ambassador {
-        width: 400px !important;
+        width: 350px !important;
     }
 
     .programs-animals-names {
@@ -139,7 +139,7 @@ img.animal.ambassador.ambassador-2 {
     .ambassadors-container {
         width: 100%;
         overflow-x: scroll;
-        padding: 100px 0;
+        padding: 100px 0 0 0;
     }
 
     .ambassador-container {
@@ -154,7 +154,7 @@ img.animal.ambassador.ambassador-2 {
     }
 
     .ambassador-container-2 {
-        margin-top: -65px;
+        margin-top: -55px;
         margin-left: -50px;
         margin-right: -50px;
     }

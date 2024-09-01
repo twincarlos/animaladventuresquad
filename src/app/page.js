@@ -12,10 +12,10 @@ import { useSection } from "./context/SectionContext";
 export default function Home() {
   const { section } = useSection();
   useEffect(() => {
-    if (section === "about") {
+    if (section === "about-1" || section === "about-2") {
       document.getElementsByClassName("home-component-2")[0].scrollIntoView({ behavior: "smooth", block: "center" });
     };
-    if (section === "programs") {
+    if (section === "programs-1" || section === "programs-2") {
       document.getElementsByClassName("home-component-5")[0].scrollIntoView({ behavior: "smooth", block: "center" });
     };
   }, [section]);

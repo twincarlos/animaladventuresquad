@@ -70,12 +70,12 @@ export default function Programs() {
                 </div>
                 <div className="Small ambassadors-container main-body">
                     <div className="animal-container">
-                        <Image className="animal ambassador ambassador-1" src={animal1} />
-                        <p className="ambassador-name animal-name-1">3 Banded Armadillo</p>
-                    </div>
-                    <div className="animal-container">
                         <Image className="animal ambassador ambassador-2" src={animal2} />
                         <p className="ambassador-name animal-name-2">Spectacled Owl</p>
+                    </div>
+                    <div className="animal-container">
+                        <Image className="animal ambassador ambassador-1" src={animal1} />
+                        <p className="ambassador-name animal-name-1">3 Banded Armadillo</p>
                     </div>
                     <div className="animal-container">
                         <Image className="animal ambassador ambassador-3" src={animal3} />
