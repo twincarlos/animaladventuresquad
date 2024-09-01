@@ -47,11 +47,20 @@
         font-size: 2em;
         text-align: center;
         width: 70%;
+        line-height: 40px;
     }
 
     .home-component-5 .container-bottom {
         overflow-x: scroll;
         justify-content: flex-start;
         padding: 0 30px;
+    }
+
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: cell;
+        gap: 50px;
     }
 }

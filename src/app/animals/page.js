@@ -29,15 +29,15 @@ export default function Programs() {
                     </div>
                 </div>
                 <div className="Small ambassadors-container">
-                    <div className="ambassador-container">
+                    <div className="ambassador-container ambassador-container-1">
                         <Image className="ambassador ambassador-1" src={ambassadors1} />
                         <p className="ambassador-name ambassador-name-1">Various species of snakes</p>
                     </div>
-                    <div className="ambassador-container">
+                    <div className="ambassador-container ambassador-container-2">
                         <Image className="ambassador ambassador-2" src={ambassadors2} />
                         <p className="ambassador-name ambassador-name-2">Monkey Tailed Skink</p>
                     </div>
-                    <div className="ambassador-container">
+                    <div className="ambassador-container ambassador-container-3">
                         <Image className="ambassador ambassador-3" src={ambassadors3} />
                         <p className="ambassador-name ambassador-name-3">Various species of parrots</p>
                     </div>

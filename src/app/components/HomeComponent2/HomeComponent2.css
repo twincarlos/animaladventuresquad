@@ -35,4 +35,9 @@
         width: 80%;
         padding: 0;
     }
+
+    .home-component-2 .container .title {
+        font-weight: 800;
+        font-size: 2.3em;
+    }
 }

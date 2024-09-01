@@ -60,11 +60,9 @@
 }
 
 .programs-animal-name.white {
-    font-size: 30px;
     font-weight: 600;
     border-radius: 25px;
     border: 2px solid var(--primary-color);
-    padding: 0 10px;
     background: white;
     color: var(--primary-color);
 }
@@ -124,6 +122,7 @@ img.animal.ambassador.ambassador-2 {
 
     .programs-animal-name {
         text-align: center;
+        font-size: 1.3em;
     }
 
     .programs-footer p  {
@@ -133,6 +132,7 @@ img.animal.ambassador.ambassador-2 {
     .ambassadors-container {
         width: 100%;
         overflow-x: scroll;
+        padding: 100px 0;
     }
 
     .ambassador-container {
@@ -144,5 +144,9 @@ img.animal.ambassador.ambassador-2 {
 
     .ambassador.ambassador-2 {
         margin: 0;
+    }
+
+    .ambassador-container-2 {
+        margin-top: -80px;
     }
 }
