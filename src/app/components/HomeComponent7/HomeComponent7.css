@@ -5,7 +5,6 @@
 }
 
 .widget {
-    background: url("../../assets/mobile-menu-background.png");
     background-size: contain;
     width: 1000px;
     display: flex;
@@ -14,7 +13,7 @@
     align-items: center;
     gap: 20px;
     height: 620px;
-    box-shadow: 0 10px 5px #00000029;
+    background-image: url("../../assets/widget.png");
 }
 
 .widget img {
@@ -62,6 +61,8 @@
         background-position: center;
         width: 90%;
         border-radius: 25px;
+        background-image: url("../../assets/mobile-menu-background.png");
+        box-shadow: 0 10px 5px #00000029;
     }
 
     .widget .title {

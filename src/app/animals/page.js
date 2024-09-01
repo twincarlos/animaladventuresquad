@@ -48,7 +48,7 @@ export default function Programs() {
                     <p className="programs-animal-name">Bearded Dragon</p>
                     <p className="programs-animal-name">Madagascan Tenrec</p>
                     <p className="programs-animal-name">Spectacled Owl</p>
-                    <p className="programs-animal-name">Madagascan Hissing Cockroaches</p>
+                    <p className="programs-animal-name long">Madagascan Hissing Cockroaches</p>
                     <p className="programs-animal-name white">Blue Tongue Skink</p>
                     <p className="programs-animal-name">Blue Tongue Skink</p>
                     <p className="programs-animal-name">Hedgehog</p>

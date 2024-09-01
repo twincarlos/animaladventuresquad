@@ -23,7 +23,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <p className="footer-copyright">© 2024 AnimalAdventure Squad</p>
+                <p className="footer-copyright">© 2024 Animal Adventure Squad</p>
             </div>
             <Image src={footerImg} />
         </footer>
