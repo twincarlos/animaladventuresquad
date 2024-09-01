@@ -34,7 +34,7 @@
     background: var(--primary-color);
     color: white;
     border-radius: 48px;
-    padding: 10px 40px;
+    padding: 5px 40px;
 }
 
 .home-component-5 .sub-title {
@@ -47,7 +47,7 @@
         font-size: 2em;
         text-align: center;
         width: 70%;
-        line-height: 40px;
+        line-height: 35px;
     }
 
     .home-component-5 .container-bottom {
