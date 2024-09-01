@@ -15,10 +15,18 @@ export default function Footer() {
                     <Image src={footerLogo} />
                     <div className="footer-links">
                         <div className="footer-link-column">
-                            <Link onClick={() => setSection(section === "about-1" ? "about-2" : "about-1")} href={"/"}>About Us</Link>
-                            <Link onClick={() => setSection("")} href={"/"}>Animals</Link>
-                            <Link onClick={() => setSection(section === "programs-1" ? "programs-2" : "programs-1")} href={"/"}>Programs</Link>
-                            <Link onClick={() => setSection("")} href={"/"}>Contact Us</Link>
+                            <Link onClick={() => {
+                                setSection(section === "about-1" ? "about-2" : "about-1");
+                            }} href={"/#about"}>About Us</Link>
+                            <Link onClick={() => {
+                                setSection("");
+                            }} href={"/animals"}>Animals</Link>
+                            <Link onClick={() => {
+                                setSection(section === "programs-1" ? "programs-2" : "programs-1");
+                            }} href={"/#programs"}>Programs</Link>
+                            <Link onClick={() => {
+                                setSection("");
+                            }} href={"/contact-us"}>Contact Us</Link>
                         </div>
                         <div className="footer-link-column">
                             <Link href={"/"}>Privacy policy</Link>

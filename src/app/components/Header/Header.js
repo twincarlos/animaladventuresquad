@@ -40,13 +40,13 @@ export default function Header() {
                 <Link href={"/"}><Image alt="Animal Adventure Squad Logo" src={headerLogo} /></Link>
                 <nav>
                     <Link onClick={() => {
-                        setSection("about");
+                        setSection(section === "about-1" ? "about-2" : "about-1");
                     }} href={"/#about"}>About</Link>
                     <Link onClick={() => {
                         setSection("");
                     }} href={"/animals"}>Animals</Link>
                     <Link onClick={() => {
-                        setSection("programs");
+                        setSection(section === "programs-1" ? "programs-2" : "programs-1");
                     }} href={"/#programs"}>Programs</Link>
                     <Link onClick={() => {
                         setSection("");
