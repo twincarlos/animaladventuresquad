@@ -16,7 +16,7 @@ export default function Programs() {
             </section>
             <section className="programs-ambassadors main-body">
                 <h1>FALL 24 AND SPRING 25 AMBASSADORS</h1>
-                <div className="ambassadors-container">
+                <div className="Large ambassadors-container">
                     <div className="ambassadors-imgs">
                         <Image className="ambassador ambassador-1" src={ambassadors1} />
                         <Image className="ambassador ambassador-2" src={ambassadors2} />
@@ -25,6 +25,20 @@ export default function Programs() {
                     <div className="ambassadors-names">
                         <p className="ambassador-name ambassador-name-1">Various species of snakes</p>
                         <p className="ambassador-name ambassador-name-2">Monkey Tailed Skink</p>
+                        <p className="ambassador-name ambassador-name-3">Various species of parrots</p>
+                    </div>
+                </div>
+                <div className="Small ambassadors-container">
+                    <div className="ambassador-container">
+                        <Image className="ambassador ambassador-1" src={ambassadors1} />
+                        <p className="ambassador-name ambassador-name-1">Various species of snakes</p>
+                    </div>
+                    <div className="ambassador-container">
+                        <Image className="ambassador ambassador-2" src={ambassadors2} />
+                        <p className="ambassador-name ambassador-name-2">Monkey Tailed Skink</p>
+                    </div>
+                    <div className="ambassador-container">
+                        <Image className="ambassador ambassador-3" src={ambassadors3} />
                         <p className="ambassador-name ambassador-name-3">Various species of parrots</p>
                     </div>
                 </div>

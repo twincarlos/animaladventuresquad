@@ -133,4 +133,20 @@ img.animal.ambassador.ambassador-2 {
     .programs-footer p  {
         width: 90%;
     }
+
+    .ambassadors-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .ambassador-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ambassador.ambassador-2 {
+        margin: 0;
+    }
 }

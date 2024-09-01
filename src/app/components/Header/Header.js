@@ -32,8 +32,10 @@ export default function Header() {
                 </nav>
             </header>
             <header className="Small">
-                <Image className="mobile-logo" src={headerLogoMobile} />
-                <Image onClick={() => setShowMenu(!showMenu)} className="burguer-icon" src={burguerIcon} />
+                <div className="header">
+                    <Image className="mobile-logo" src={headerLogoMobile} />
+                    <Image onClick={() => setShowMenu(!showMenu)} className="burguer-icon" src={burguerIcon} />
+                </div>
             </header>
         </>
     );

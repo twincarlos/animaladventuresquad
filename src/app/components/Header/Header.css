@@ -1,12 +1,22 @@
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 30px 80px;
-    gap: 40px;
     background-image: linear-gradient(to top, transparent, var(--primary-color));
+    width: 100%;
+}
+
+.header img {
+    margin: 40px;
 }
 
 header img {
@@ -29,12 +39,15 @@ nav {
     display: none;
 }
 
+@media screen and (min-width: 651px) {
+    header {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .Small {
         display: flex !important;
-        min-width: 400px;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .Large {

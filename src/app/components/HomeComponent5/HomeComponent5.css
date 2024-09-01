@@ -48,4 +48,10 @@
         text-align: center;
         width: 70%;
     }
+
+    .home-component-5 .container-bottom {
+        overflow-x: scroll;
+        justify-content: flex-start;
+        padding: 0 30px;
+    }
 }
