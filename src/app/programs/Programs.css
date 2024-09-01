@@ -122,6 +122,10 @@ img.animal.ambassador.ambassador-2 {
         width: 90%;
     }
 
+    .programs-animal-name {
+        text-align: center;
+    }
+
     .Large {
         display: none;
     }
