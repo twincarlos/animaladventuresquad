@@ -10,7 +10,7 @@ export default function Header() {
             <nav>
                 <Link href={"/"}>About</Link>
                 <Link href={"/"}>Animals</Link>
-                <Link href={"/"}>Programs</Link>
+                <Link href={"/programs"}>Programs</Link>
                 <Link href={"/contact-us"}>Contact Us</Link>
             </nav>
         </header>

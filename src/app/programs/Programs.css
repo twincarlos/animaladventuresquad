@@ -1,0 +1,99 @@
+.programs-header-img {
+    width: 100%;
+    height: auto;
+}
+
+.programs-ambassadors.main-body {
+    max-width: 100%;
+    margin: 100px 0;
+}
+
+.ambassador {
+    width: 400px;
+    height: auto;
+}
+
+.ambassador.ambassador-2 {
+    width: 500px;
+    margin: 0 -60px 60px -60px;
+}
+
+.ambassadors-names {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.ambassador-name {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.ambassador-name-1, .ambassador-name-3 {
+    width: 250px;
+}
+
+.programs-animals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs-animals-names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    row-gap: 20px;
+}
+
+.programs-animal-name {
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    padding: 0 10px;
+    background: var(--primary-color);
+    color: white;
+}
+
+.programs-animal-name.white {
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    padding: 0 10px;
+    background: white;
+    color: var(--primary-color);
+}
+
+.ambassadors-container.main-body {
+    max-width: 100%;
+    margin: 100px 0;
+}
+
+.animals-names {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+    margin-right: 120px;
+}
+
+img.animal.ambassador.ambassador-2 {
+    margin: 0 0 60px 0;
+}
+
+.programs-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.programs-footer p {
+    max-width: 710px;
+    text-align: center;
+}
