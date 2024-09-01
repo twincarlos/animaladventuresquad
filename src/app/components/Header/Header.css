@@ -30,13 +30,9 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 70px;
-    padding: 10px 50px;
+    padding: 15px 50px 10px 50px;
     border-radius: 25px;
     background: white;
-}
-
-.Small {
-    display: none;
 }
 
 @media screen and (min-width: 651px) {
@@ -54,14 +50,6 @@ nav {
 }
 
 @media screen and (max-width: 650px) {
-    .Small {
-        display: flex !important;
-    }
-
-    .Large {
-        display: none;
-    }
-
     .mobile-logo {
         width: 50px;
         height: 50px;

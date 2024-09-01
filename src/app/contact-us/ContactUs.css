@@ -20,12 +20,12 @@
 }
 
 @media screen and (max-width: 650px) {
-    .main-body {
+    .contact-us .main-body {
         width: 80%;
     }
 
-    .main-title {
-        width: 100%;
+    .contact-us .main-title {
+        width: 350px;
         color: white;
         font-size: 40px;
         margin-bottom: 100px;
@@ -60,15 +60,15 @@
         gap: 20px;
     }
 
-    label {
+    .contact-us label {
         width: 80%;
     }
 
-    label.input-text {
+    .contact-us label.input-text {
         width: 80%;
     }
 
-    label:not(.input-text) input {
+    .contact-us label:not(.input-text) input {
         height: 45px;
     }
 
@@ -76,7 +76,11 @@
         margin-top: 150px;
     }
 
-    .main-header {
+    .contact-us .main-header {
         gap: 100px;
+    }
+
+    .contact-us .container {
+        width: 100%;
     }
 }

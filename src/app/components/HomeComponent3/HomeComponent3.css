@@ -12,7 +12,6 @@
 
 .home-component-3 .title {
     font-size: 2.5em;
-    font-weight: 700;
     background: var(--primary-color);
     color: white;
     border-radius: 48px;
@@ -25,7 +24,7 @@
     }
 
     .home-component-3 .title {
-        font-size: 1.5em;
+        font-size: 2em;
         text-align: center;
         width: 70%;
     }

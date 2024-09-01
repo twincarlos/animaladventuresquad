@@ -27,7 +27,7 @@
 
 .ambassador-name {
     font-size: 30px;
-    font-weight: 600;
+    font-family: "Coolvetica";
 }
 
 .ambassador-name-1, .ambassador-name-3 {
@@ -54,7 +54,7 @@
     font-weight: 600;
     border-radius: 25px;
     border: 2px solid var(--primary-color);
-    padding: 0 10px;
+    padding: 5px 10px 0 10px;
     background: var(--primary-color);
     color: white;
 }
@@ -98,12 +98,12 @@ img.animal.ambassador.ambassador-2 {
     text-align: center;
 }
 
-.Small {
-    display: none;
+.Large.ambassadors-container {
+    flex-direction: column;
 }
 
 @media screen and (max-width: 650px) {
-    h1 {
+    .programs h1 {
         width: 80%;
         font-size: 30px;
     }
@@ -124,14 +124,6 @@ img.animal.ambassador.ambassador-2 {
 
     .programs-animal-name {
         text-align: center;
-    }
-
-    .Large {
-        display: none;
-    }
-
-    .Small {
-        display: flex;
     }
 
     .programs-footer p  {

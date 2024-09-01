@@ -16,8 +16,8 @@ export default function Header() {
                 <div className="mobile-menu-overlay">
                     <div className="mobile-menu">
                         <Link onClick={() => setShowMenu(false)} href={"/"}>About</Link>
-                        <Link onClick={() => setShowMenu(false)} href={"/"}>Animals</Link>
-                        <Link onClick={() => setShowMenu(false)} href={"/programs"}>Programs</Link>
+                        <Link onClick={() => setShowMenu(false)} href={"/animals"}>Animals</Link>
+                        <Link onClick={() => setShowMenu(false)} href={"/"}>Programs</Link>
                         <Link onClick={() => setShowMenu(false)} href={"/contact-us"}>Contact Us</Link>
                     </div>
                 </div>
@@ -26,8 +26,8 @@ export default function Header() {
                 <Link href={"/"}><Image alt="Animal Adventure Squad Logo" src={headerLogo} /></Link>
                 <nav>
                     <Link href={"/"}>About</Link>
-                    <Link href={"/"}>Animals</Link>
-                    <Link href={"/programs"}>Programs</Link>
+                    <Link href={"/animals"}>Animals</Link>
+                    <Link href={"/"}>Programs</Link>
                     <Link href={"/contact-us"}>Contact Us</Link>
                 </nav>
             </header>

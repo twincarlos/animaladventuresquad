@@ -1,15 +1,26 @@
 :root {
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --primary-color: #02203E;
   --secondary-color: #635146;
   --tertiary-color: #ECCBD2;
 }
 
+@font-face {
+  font-family: "Coolvetica";
+  src: url('./assets/coolvetica.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url('./assets/gill-sans.otf') format('opentype');
+}
+
 html {
   width: 100vw;
   overflow-x: hidden;
+}
+
+button {
+  font-family: "Gill Sans";
 }
 
 body {
@@ -23,13 +34,19 @@ body {
   margin: 0;
 }
 
+p {
+  font-family: "Gill Sans";
+}
+
 a {
   text-decoration: none;
   color: inherit;
+  font-family: "Gill Sans";
 }
 
 h1 {
   font-size: 60px;
+  font-family: "Coolvetica";
 }
 
 form {
@@ -113,4 +130,26 @@ label.input-text {
 
 input[type="text"] {
   height: 150px;
+}
+
+.title {
+  font-family: "Coolvetica";
+}
+
+@media screen and (max-width: 650px) {
+  .Large {
+    display: none;
+  }
+  .Small {
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .Large {
+    display: flex !important;
+  }
+  .Small {
+    display: none;
+  }
 }

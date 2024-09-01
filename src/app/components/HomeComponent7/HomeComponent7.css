@@ -63,4 +63,8 @@
         width: 90%;
         border-radius: 25px;
     }
+
+    .widget .title {
+        width: 80%;
+    }
 }
