@@ -1,0 +1,21 @@
+.home-component-8 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 200px auto;
+    gap: 30px;
+}
+
+.home-component-8 img {
+    height: 100%;
+    width: 300px;
+}
+
+@media screen and (max-width: 650px) {
+    .home-component-8 {
+        display: none;
+    }
+}

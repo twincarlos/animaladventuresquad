@@ -2,3 +2,34 @@
     width: 100%;
     height: 100%;
 }
+
+.book-a-visit-container {
+    position: relative;
+    bottom: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.book-a-visit-container h3 {
+    font-size: 2em;
+    background: white;
+    color: var(--primary-color);
+    padding: 0 50px;
+    border-radius: 25px;
+}
+
+.book-a-visit-container h2 {
+    font-size: 3em;
+}
+
+@media screen and (max-width: 650px) {
+    .book-a-visit-container {
+        display: none;
+    }
+}

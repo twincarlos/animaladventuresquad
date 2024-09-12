@@ -6,6 +6,9 @@ import HomeComponent4 from "./components/HomeComponent4/HomeComponent4";
 import HomeComponent5 from "./components/HomeComponent5/HomeComponent5";
 import HomeComponent6 from "./components/HomeComponent6/HomeComponent6";
 import HomeComponent7 from "./components/HomeComponent7/HomeComponent7";
+import HomeComponent8 from "./components/HomeComponent8/HomeComponent8";
+import HomeComponent9 from "./components/HomeComponent9/HomeComponent9";
+
 import { useEffect } from "react";
 import { useSection } from "./context/SectionContext";
 
@@ -24,8 +27,10 @@ export default function Home() {
       <HomeComponent1 />
       <HomeComponent2 />
       <HomeComponent3 />
+      <HomeComponent8 />
       <HomeComponent4 />
       <HomeComponent5 />
+      <HomeComponent9 />
       <HomeComponent6 />
       <HomeComponent7 />
     </main>
