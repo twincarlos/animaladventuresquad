@@ -1,6 +1,7 @@
 import "./HomeComponent9.css";
 import Image from "next/image";
-import homeComponentImg from "@/app/assets/home-component-8-img.png";
+import manIcon from "@/app/assets/man-icon.png";
+import womanIcon from "@/app/assets/woman-icon.png";
 
 export default function HomeComponent9() {
     return (
@@ -8,6 +9,7 @@ export default function HomeComponent9() {
             <h1 className="title">WHAT TEACHERS ARE SAYING</h1>
             <div className="testimonials">
                 <div className="testimonial">
+                    <Image className="teacher-icon" src={manIcon} />
                     <div className="testimonial-quote blue">
                         <p>“The Animal Adventure Squad team gave our students an experience they’ll never forget! Not only were the kids thrilled to meet the animals, but they also walked away with a deeper understanding of important science topics like conservation and ecosystems. The live presentations made abstract concepts come to life!”</p>
                     </div>
@@ -17,6 +19,7 @@ export default function HomeComponent9() {
                     </div>
                 </div>
                 <div className="testimonial pink">
+                    <Image className="teacher-icon" src={womanIcon} />
                     <div className="testimonial-quote pink">
                         <p>“The Animal Adventure Squad team gave our students an experience they’ll never forget! Not only were the kids thrilled to meet the animals, but they also walked away with a deeper understanding of important science topics like conservation and ecosystems. The live presentations made abstract concepts come to life!”</p>
                     </div>
@@ -26,6 +29,7 @@ export default function HomeComponent9() {
                     </div>
                 </div>
                 <div className="testimonial">
+                    <Image className="teacher-icon" src={manIcon} />
                     <div className="testimonial-quote blue">
                         <p>“This past Friday when Jean came from Animal Adventure Squad, it was an amazing experience not only for our patients but the employees as well. Here at the clinic, it takes us some time to transport our patients from one room to another due to wheelchairs and equipment.</p>
                     </div>
