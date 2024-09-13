@@ -146,6 +146,10 @@ input[type="text"] {
   font-family: "Coolvetica";
 }
 
+strong {
+  font-family: "Gill Sans Medium";
+}
+
 @media screen and (max-width: 650px) {
   .Large {
     display: none !important;

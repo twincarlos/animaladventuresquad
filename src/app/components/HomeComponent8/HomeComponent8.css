@@ -22,6 +22,10 @@
     width: 970px;
 }
 
+.testimonial-author p {
+    font-family: "Coolvetica";
+}
+
 @media screen and (max-width: 650px) {
     .home-component-8 {
         display: none;

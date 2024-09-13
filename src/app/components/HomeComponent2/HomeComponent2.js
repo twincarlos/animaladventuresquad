@@ -27,7 +27,7 @@ export default function HomeComponent2() {
                 <div className="container">
                     <p className="title">Wild Encounters, Real Learning: Bringing the Zoo to You!</p>
                     <div className="paragraph">
-                        <p className="text">At Animal Adventure Squad, we believe learning about nature should be exciting, interactive, and unforgettable! Our traveling team brings a variety of live animals straight to your school, giving students the chance to meet incredible creatures like tortoises, parrots, kangaroos, and even an axolotl! Through hands-on animal encounters, students will gain a deeper understanding of conservation, biology, and the natural world sparking curiosity and a love for wildlife. Get ready to watch their eyes light up as they learn about animal adaptations, ecosystems, and more in a fun and engaging way!</p>
+                        <p className="text">At <strong>Animal Adventure Squad</strong>, we believe learning about nature should be exciting, interactive, and unforgettable! Our traveling team brings a variety of live animals straight to your school, giving students the chance to meet incredible creatures like tortoises, parrots, kangaroos, and even an axolotl! Through hands-on animal encounters, students will gain a deeper understanding of conservation, biology, and the natural world sparking curiosity and a love for wildlife. Get ready to watch their eyes light up as they learn about animal adaptations, ecosystems, and more in a fun and engaging way!</p>
                     </div>
                 </div>
             </div>

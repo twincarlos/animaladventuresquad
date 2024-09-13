@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 50px;
     width: 50%;
     padding: 70px;
 }
@@ -72,6 +72,7 @@
 
     .home-component-2 .container .title {
         width: 600px;
+        line-height: 70px;
     }
 
     .home-component-2 .paragraph {
