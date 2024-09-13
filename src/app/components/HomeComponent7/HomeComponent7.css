@@ -22,20 +22,19 @@
 }
 
 .widget .title {
-    font-size: 2.5em;
-    font-weight: 700;
-    width: 400px;
+    font-size: 80px;
     text-align: center;
+    width: 500px;
 }
 
 .widget input {
-    font-size: 0.8em;
+    font-size: 21px;
     border-radius: 25px;
     border: 1px solid var(--primary-color);
     text-align: center;
     padding: 5px;
     background: transparent;
-    width: 80%;
+    width: 425px;
     height: auto;
 }
 
@@ -44,15 +43,14 @@
     border: none;
     border-radius: 25px;
     color: var(--tertiary-color);
-    font-size: 1em;
-    padding: 10px 30px;
+    font-size: 28px;
+    padding: 10px 40px 0 40px;
 }
 
 .widget .widget-footer {
     width: 350px;
     text-align: center;
-    margin-top: 30px;
-    font-size: 1em;
+    font-size: 24px;
 }
 
 @media screen and (max-width: 650px) {
@@ -66,6 +64,15 @@
     }
 
     .widget .title {
+        width: 80%;
+        font-size: 2.5em;
+    }
+
+    .widget input {
+        width: 80%;
+    }
+
+    .widget .widget-footer {
         width: 80%;
     }
 }

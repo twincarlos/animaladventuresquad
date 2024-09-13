@@ -58,6 +58,11 @@ footer img {
     margin-left: 70px;
 }
 
+footer a {
+    font-family: "Gill Sans Medium";
+    font-weight: 700;
+}
+
 @media screen and (max-width: 650px) {
     footer {
         display: flex;

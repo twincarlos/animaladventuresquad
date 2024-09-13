@@ -85,3 +85,23 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 651px) {
+    .contact-us .main-title {
+        font-size: 80px;
+        width: 1000px;
+    }
+
+    .contact-us p {
+        font-size: 32px;
+        width: 950px;
+    }
+
+    .contact-us-form-header h1 {
+        font-size: 80px;
+    }
+
+    .contact-us-form-header p {
+        font-size: 23px;
+    }
+}

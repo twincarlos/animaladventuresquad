@@ -3,13 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
     text-align: center;
+    margin: 200px auto;
 }
 
 .home-component-9 .title {
-    font-size: 2.5em;
-    font-weight: 700;
+    font-size: 80px;
     background: var(--primary-color);
     color: white;
     border-radius: 48px;
@@ -25,7 +24,7 @@
 
 
 .testimonial {
-    width: 400px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,13 +34,13 @@
 
 .testimonial-quote {
     background: var(--primary-color);
-    height: 350px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
     border-radius: 25px;
-    font-size: 1.3em;
+    font-size: 32px;
+    padding: 20px 0;
 }
 
 .testimonial-quote.blue {
@@ -54,7 +53,7 @@
 }
 
 .testimonial-author {
-    font-size: 1.5em;
+    font-size: 32px;
 }
 
 .testimonial.pink {
@@ -62,15 +61,16 @@
 }
 
 .home-component-9 > p {
-    max-width: 800px;
+    width: 930px;
     margin-top: 50px;
+    font-size: 32px;
 }
 
 .teacher-icon {
-    height: 100%;
-    width: 60px;
-    position: relative;
     top: 70px;
+    width: 60px;
+    height: 100%;
+    position: relative;
     background: white;
     border-radius: 50%;
     padding: 10px 20px;

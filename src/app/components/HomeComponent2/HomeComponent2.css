@@ -9,15 +9,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     width: 50%;
     padding: 70px;
 }
 
 .home-component-2 .container .title {
-    font-weight: 800;
-    font-size: 1.7em;
+    font-size: 80px;
 }
 
 .home-component-2 .container img {
@@ -65,5 +64,17 @@
 
     .home-component-2 {
         flex-direction: column;
+    }
+
+    .home-component-2 .text {
+        font-size: 32px;
+    }
+
+    .home-component-2 .container .title {
+        width: 600px;
+    }
+
+    .home-component-2 .paragraph {
+        width: 600px;
     }
 }

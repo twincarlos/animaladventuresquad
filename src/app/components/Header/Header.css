@@ -11,7 +11,6 @@ header {
     align-items: center;
     position: absolute;
     top: 0;
-    background-image: linear-gradient(to top, transparent, var(--primary-color));
     width: 100%;
 }
 
@@ -35,6 +34,12 @@ nav {
     background: white;
 }
 
+nav a {
+    font-family: "Gill Sans Medium";
+    font-weight: 700;
+    font-size: 21px;
+}
+
 @media screen and (min-width: 651px) {
     header {
         display: flex;
@@ -42,7 +47,6 @@ nav {
         align-items: center;
         position: absolute;
         top: 0;
-        background-image: linear-gradient(to top, transparent, var(--primary-color));
         width: 100%;
         padding-left: 100px;
         gap: 50px;

@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
     margin: 200px auto;
     gap: 30px;
 }
@@ -12,6 +11,15 @@
 .home-component-8 img {
     height: 100%;
     width: 300px;
+}
+
+.home-component-8 h1 {
+    font-size: 80px;
+}
+
+.home-component-8 p {
+    font-size: 32px;
+    width: 970px;
 }
 
 @media screen and (max-width: 650px) {

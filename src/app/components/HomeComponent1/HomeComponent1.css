@@ -5,7 +5,7 @@
 
 .book-a-visit-container {
     position: relative;
-    bottom: 400px;
+    bottom: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,17 +17,22 @@
 }
 
 .book-a-visit-container a {
-    font-size: 2em;
+    font-size: 48px;
     background: white;
     color: var(--primary-color);
     padding: 0 50px;
-    border-radius: 25px;
+    border-radius: 48px;
     padding-top: 10px;
     font-weight: 700;
 }
 
 .book-a-visit-container h2 {
-    font-size: 3em;
+    font-size: 80px;
+}
+
+.book-a-visit-container p {
+    font-size: 32px;
+    width: 980px;
 }
 
 @media screen and (max-width: 650px) {

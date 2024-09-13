@@ -105,6 +105,11 @@ img.animal.ambassador.ambassador-2 {
     .long {
         width: 60%;
     }
+
+    .programs-ambassadors h1 {
+        font-size: 104px;
+        width: 1000px;
+    }
 }
 
 @media screen and (max-width: 650px) {
