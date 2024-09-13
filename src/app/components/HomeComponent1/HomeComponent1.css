@@ -16,12 +16,14 @@
     text-align: center;
 }
 
-.book-a-visit-container h3 {
+.book-a-visit-container a {
     font-size: 2em;
     background: white;
     color: var(--primary-color);
     padding: 0 50px;
     border-radius: 25px;
+    padding-top: 10px;
+    font-weight: 700;
 }
 
 .book-a-visit-container h2 {
