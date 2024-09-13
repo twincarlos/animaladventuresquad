@@ -65,9 +65,3 @@
         width: 75%;
     }
 }
-
-@media screen and (min-width: 651px) {
-    .home-component-6 {
-        display: none;
-    }
-}
