@@ -20,7 +20,7 @@ export default function Header() {
                         <Link onClick={() => {
                             setSection(section === "about-1" ? "about-2" : "about-1");
                             setShowMenu(false);
-                        }} href={"/#about"}>About</Link>
+                        }} href={"/about"}>About</Link>
                         <Link onClick={() => {
                             setSection("")
                             setShowMenu(false);
@@ -41,7 +41,7 @@ export default function Header() {
                 <nav>
                     <Link onClick={() => {
                         setSection(section === "about-1" ? "about-2" : "about-1");
-                    }} href={"/#about"}>About</Link>
+                    }} href={"/about"}>About</Link>
                     <Link onClick={() => {
                         setSection("");
                     }} href={"/animals"}>Animals</Link>
