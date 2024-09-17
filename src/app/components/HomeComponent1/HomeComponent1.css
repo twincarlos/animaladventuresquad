@@ -5,24 +5,21 @@
 
 .book-a-visit-container {
     position: relative;
-    bottom: 500px;
+    margin: auto;
+    color: white;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    margin: auto;
-    color: white;
-    text-align: center;
 }
 
 .book-a-visit-container a {
     font-size: 48px;
     background: white;
     color: var(--primary-color);
-    padding: 0 50px;
+    padding: 10px 50px 0 50px;
     border-radius: 48px;
-    padding-top: 10px;
     font-weight: 700;
 }
 
@@ -35,8 +32,40 @@
     width: 980px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 651px) {
     .book-a-visit-container {
+        bottom: 500px;
+        width: 60%;
+    }
+
+    .mobile {
         display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .desktop {
+        display: none;
+    }
+
+    .book-a-visit-container {
+        bottom: 250px;
+        width: 70%;
+        gap: 10px;
+    }
+
+    .book-a-visit-container h2 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .book-a-visit-container p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .book-a-visit-container a {
+        font-size: 24px;
+        padding: 10px 20px 0 20px;
     }
 }

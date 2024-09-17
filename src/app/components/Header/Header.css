@@ -12,6 +12,7 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .header img {
@@ -70,6 +71,7 @@ nav a {
         height: 150dvh;
         position: absolute;
         backdrop-filter: blur(7px);
+        z-index: 2;
     }
 
     .mobile-menu {
