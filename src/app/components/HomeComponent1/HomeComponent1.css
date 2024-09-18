@@ -66,6 +66,10 @@
 
     .book-a-visit-container a {
         font-size: 24px;
-        padding: 10px 20px 0 20px;
+        padding: 5px 10px;
+    }
+
+    .home-component-1 {
+        margin-bottom: -150px;
     }
 }
