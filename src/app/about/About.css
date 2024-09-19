@@ -16,6 +16,7 @@
 
     .about-body {
         gap: 50px;
+        margin: 100px auto;
     }
 }
 
@@ -39,7 +40,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
 }
 
 .about img {
