@@ -1,6 +1,7 @@
 import "./ContactUs.css";
 import Image from "next/image";
 import contactUsMobile from "@/app/assets/contact-us-mobile.png";
+import { mailchimp } from "@/app/actions/mailchimp.js";
 
 export default function ContactUs() {
     return (
@@ -16,27 +17,27 @@ export default function ContactUs() {
                         <h1>Contact Us</h1>
                         <p>Do you want to have this experience? Get in touch with us.</p>
                     </div>
-                    <form>
+                    <form action={mailchimp}>
                         <div className="form-labels">
                             <label>
                                 First Name
-                                <input />
+                                <input type="text" name="first-name" />
                             </label>
                             <label>
                                 Last name
-                                <input />
+                                <input type="text" name="last-name" />
                             </label>
                             <label>
                                 Email
-                                <input />
+                                <input type="email" name="email" />
                             </label>
                             <label>
                                 Subject
-                                <input />
+                                <input type="subject" name="subject" />
                             </label>
                             <label className="input-text">
                                 Leave us a message...
-                                <input type="text" />
+                                <input type="text" name="message" />
                             </label>
                         </div>
                         <button type="submit">Submit</button>
