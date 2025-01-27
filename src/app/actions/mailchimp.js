@@ -1,6 +1,6 @@
 "use server";
 
-export async function createTournament(initialState, formData) {
+export async function mailchimp (initialState, formData) {
   const firstName = formData.get("first-name");
   const lastName = formData.get("last-name");
   const subject = formData.get("subject");
