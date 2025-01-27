@@ -1,6 +1,6 @@
 "use server";
 
-export async function mailchimp (initialState, formData) {
+export async function mailchimp (formData) {
   const firstName = formData.get("first-name");
   const lastName = formData.get("last-name");
   const subject = formData.get("subject");
