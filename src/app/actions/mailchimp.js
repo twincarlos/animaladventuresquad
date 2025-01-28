@@ -27,13 +27,13 @@ export async function mailchimp (formData) {
   });
 
   await emailjs.send(
-                process.env.NEXT_PUBLIC_SERVICE_ID,
-                process.env.NEXT_PUBLIC_TEMPLATE_ID,
+                process.env.SERVICE_ID,
+                process.env.TEMPLATE_ID,
                 {
                     senderEmail: email,
-                    receiverEmail: process.env.NEXT_PUBLIC_RECEIVER_EMAIL,
+                    receiverEmail: process.env.RECEIVER_EMAIL,
                     subject,
                     message,
                 },
-                process.env.NEXT_PUBLIC_USER_ID
+                process.env.USER_ID
             );};
