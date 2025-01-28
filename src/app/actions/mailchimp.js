@@ -18,12 +18,13 @@ export async function mailchimp (formData) {
   });
 };
 
-export async sendEmail (formData) {
+export async function sendEmail (formData) {
   const firstName = formData.get("first-name");
   const lastName = formData.get("last-name");
   const subject = formData.get("subject");
   const message = formData.get("message");
-  const email = formData.get("email");    const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+  const email = formData.get("email");
+  const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -39,4 +40,5 @@ export async sendEmail (formData) {
             message,
           }
         })
-});};
+});
+};
