@@ -43,6 +43,7 @@ export default function ContactUs() {
                         </div>
                         <button onClick={() => {
                             alert("Thanks for your message! Our team will review it shortly.");
+                            window.location.reload();
                         }} type="submit">Submit</button>
                     </form>
                 </div>
