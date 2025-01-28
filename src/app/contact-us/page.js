@@ -1,3 +1,4 @@
+"use client";
 import "./ContactUs.css";
 import Image from "next/image";
 import contactUsMobile from "@/app/assets/contact-us-mobile.png";
@@ -40,7 +41,9 @@ export default function ContactUs() {
                                 <input type="text" name="message" />
                             </label>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button onClick={() => {
+                            alert("Thanks for your message! Our team will review it shortly.");
+                        }} type="submit">Submit</button>
                     </form>
                 </div>
             </div>
