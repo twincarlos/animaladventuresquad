@@ -26,7 +26,7 @@ export async function mailchimp (formData) {
     body: JSON.stringify(data)
   });
 
-  await emailjs.send(
+  /*await emailjs.send(
                 process.env.SERVICE_ID,
                 process.env.TEMPLATE_ID,
                 {
@@ -36,4 +36,5 @@ export async function mailchimp (formData) {
                     message,
                 },
                 process.env.USER_ID
-            );};
+            );*/
+};
