@@ -1,4 +1,5 @@
 "use server";
+import emailjs from "emailjs-com";
 
 export async function mailchimp (formData) {
   const firstName = formData.get("first-name");
@@ -12,9 +13,7 @@ export async function mailchimp (formData) {
     status: "subscribed",
     merge_fields: {
       FNAME: firstName,
-      LNAME: lastName,
-      SUBJECT: subject,
-      MESSAGE: message
+      LNAME: lastName
     }
   };
   
@@ -26,4 +25,15 @@ export async function mailchimp (formData) {
     },
     body: JSON.stringify(data)
   });
-};
+
+  await emailjs.send(
+                process.env.NEXT_PUBLIC_SERVICE_ID,
+                process.env.NEXT_PUBLIC_TEMPLATE_ID,
+                {
+                    senderEmail: email,
+                    receiverEmail: process.env.NEXT_PUBLIC_RECEIVER_EMAIL,
+                    subject,
+                    message,
+                },
+                process.env.NEXT_PUBLIC_USER_ID
+            );};
