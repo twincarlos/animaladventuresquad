@@ -1,5 +1,4 @@
 "use server";
-import emailjs from "emailjs-com";
 
 export async function mailchimp (formData) {
   const firstName = formData.get("first-name");
@@ -26,15 +25,20 @@ export async function mailchimp (formData) {
     body: JSON.stringify(data)
   });
 
-  /*await emailjs.send(
-                process.env.SERVICE_ID,
-                process.env.TEMPLATE_ID,
-                {
-                    senderEmail: email,
-                    receiverEmail: process.env.RECEIVER_EMAIL,
-                    subject,
-                    message,
-                },
-                process.env.USER_ID
-            );*/
+  const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({
+          service_id: process.env.SERVICE_ID,
+          template_id: process.env.TEMPLATE_ID,
+          user_id: process.env.USER_ID,
+          accessToken: process.env.PRIVATE_KEY,
+          template_params: {
+            fullname: firstName + " " + lastName,
+            email,
+            message,
+          },
+        }),
 };
