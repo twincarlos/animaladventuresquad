@@ -39,6 +39,7 @@ export async function mailchimp (formData) {
             fullname: firstName + " " + lastName,
             email,
             message,
-          },
-        }),
+          }
+        })
+});
 };
