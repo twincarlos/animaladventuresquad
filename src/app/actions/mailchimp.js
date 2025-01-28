@@ -1,19 +1,11 @@
 "use server";
 
 export async function mailchimp (formData) {
-  const firstName = formData.get("first-name");
-  const lastName = formData.get("last-name");
-  const subject = formData.get("subject");
-  const message = formData.get("message");
   const email = formData.get("email");  
 
   const data = {
     email_address: email,
-    status: "subscribed",
-    merge_fields: {
-      FNAME: firstName,
-      LNAME: lastName
-    }
+    status: "subscribed"
   };
   
   const response = await fetch(`https://us7.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}/members/`, {
@@ -24,8 +16,14 @@ export async function mailchimp (formData) {
     },
     body: JSON.stringify(data)
   });
+};
 
-  const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+export async sendEmail (formData) {
+  const firstName = formData.get("first-name");
+  const lastName = formData.get("last-name");
+  const subject = formData.get("subject");
+  const message = formData.get("message");
+  const email = formData.get("email");    const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -41,5 +39,4 @@ export async function mailchimp (formData) {
             message,
           }
         })
-});
-};
+});};
