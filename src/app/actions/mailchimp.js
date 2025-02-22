@@ -35,8 +35,8 @@ export async function sendEmail (formData) {
           user_id: process.env.USER_ID,
           accessToken: process.env.PRIVATE_KEY,
           template_params: {
-            fullname: firstName + " " + lastName,
-            email,
+            user_name: firstName + " " + lastName,
+            user_email: email,
             message,
           }
         })
