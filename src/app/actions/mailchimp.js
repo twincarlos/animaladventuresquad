@@ -1,5 +1,5 @@
 "use server";
-import emailjs from '@emailjs/browser';
+import emailjs from "emailjs-com";
 
 export async function mailchimp (formData) {
   const email = formData.get("email");  
