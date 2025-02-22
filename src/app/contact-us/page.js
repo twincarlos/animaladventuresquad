@@ -17,14 +17,14 @@ export default function ContactUs() {
 
     async function handleSubmit () {
         await emailjs.send(
-            "service_qeplqak",
-            "template_d0i45ur",
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID,
             {
                 user_name: userData.firstName + " " + userData.lastName,
                 user_email: userData.email,
                 message: userData.message,
             },
-            "Q6Pk1XW8n87bht3Et"
+            process.env.NEXT_PUBLIC_USER_ID
         );
         setData({
             firstName: "",
