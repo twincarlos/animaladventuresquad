@@ -44,7 +44,7 @@ export async function sendEmail (formData) {
         })
 });
 */
-  emailjs.send("service_qeplqak","template_d0i45ur",{
+  await emailjs.send("service_qeplqak","template_d0i45ur",{
 user_name: "Carlos",
 user_email: "twincarlos98@gmail.com",
 message: "Message",
