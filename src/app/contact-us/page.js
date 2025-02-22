@@ -23,6 +23,7 @@ export default function ContactUs() {
                 user_name: userData.firstName + " " + userData.lastName,
                 user_email: userData.email,
                 message: userData.message,
+                subject: userData.subject
             },
             process.env.NEXT_PUBLIC_USER_ID
         );
