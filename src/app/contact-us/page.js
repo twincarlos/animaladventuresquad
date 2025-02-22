@@ -3,8 +3,38 @@ import "./ContactUs.css";
 import Image from "next/image";
 import contactUsMobile from "@/app/assets/contact-us-mobile.png";
 import { sendEmail } from "@/app/actions/mailchimp.js";
+import emailjs from "emailjs-com";
+import { useState } from "react";
 
 export default function ContactUs() {
+    const [userData, setUserData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        subject: "",
+        message: ""
+    });
+
+    async function handleSubmit () {
+        await emailjs.send(
+            "service_qeplqak",
+            "template_d0i45ur",
+            {
+                user_name: userData.firstName + " " + userData.lastName,
+                user_email: userData.email,
+                message: userData.message,
+            },
+            "Q6Pk1XW8n87bht3Et"
+        );
+        setData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            subject: "",
+            message: ""
+        });
+    };
+
     return (
         <main className="contact-us">
             <div className="main-body">
@@ -22,26 +52,27 @@ export default function ContactUs() {
                         <div className="form-labels">
                             <label>
                                 First Name
-                                <input type="text" name="first-name" />
+                                <input type="text" name="first-name" value={userData.firstName} onChange={e => setUserData({ ...userData, firstName: e.target.value })} />
                             </label>
                             <label>
                                 Last name
-                                <input type="text" name="last-name" />
+                                <input type="text" name="last-name" value={userData.lastName} onChange={e => setUserData({ ...userData, lastName: e.target.value })} />
                             </label>
                             <label>
                                 Email
-                                <input type="email" name="email" />
+                                <input type="email" name="email" value={userData.email} onChange={e => setUserData({ ...userData, email: e.target.value })} />
                             </label>
                             <label>
                                 Subject
-                                <input type="subject" name="subject" />
+                                <input type="subject" name="subject" value={userData.subject} onChange={e => setUserData({ ...userData, subject: e.target.value })} />
                             </label>
                             <label className="input-text">
                                 Leave us a message...
-                                <input type="text" name="message" />
+                                <input type="text" name="message" value={userData.message} onChange={e => setUserData({ ...userData, message: e.target.value })} />
                             </label>
                         </div>
                         <button onClick={() => {
+                            handleSubmit();
                             alert("Thanks for your message! Our team will review it shortly.");
                             window.location.reload();
                         }} type="submit">Submit</button>
