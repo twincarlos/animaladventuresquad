@@ -19,14 +19,13 @@ export default function RootLayout({ children }) {
         <Link rel="canonical" hrefLang="en" href="http://simplelocalize.com/"/>
       </head>
       <body className={inter.className}>
-    404 - Page Not Found
-    {/*
+    
         <SectionProvider>
           <Header />
           {children}
           <Footer />
         </SectionProvider>
-        */}
+        
       </body>
     </html>
   );
