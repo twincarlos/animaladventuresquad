@@ -17,11 +17,3 @@ export async function mailchimp (formData) {
     body: JSON.stringify(data)
   });
 };
-
-export async function sendEmail (formData) {
-  const firstName = formData.get("first-name");
-  const lastName = formData.get("last-name");
-  const subject = formData.get("subject");
-  const message = formData.get("message");
-  const email = formData.get("email");
-};

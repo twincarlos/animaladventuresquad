@@ -2,7 +2,6 @@
 import "./ContactUs.css";
 import Image from "next/image";
 import contactUsMobile from "@/app/assets/contact-us-mobile.png";
-import { sendEmail } from "@/app/actions/mailchimp.js";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 
@@ -49,7 +48,7 @@ export default function ContactUs() {
                         <h1>Contact Us</h1>
                         <p>Do you want to have this experience? Get in touch with us.</p>
                     </div>
-                    <form action={sendEmail}>
+                    <form>
                         <div className="form-labels">
                             <label>
                                 First Name
