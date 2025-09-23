@@ -19,13 +19,13 @@ export default function RootLayout({ children }) {
         <Link rel="canonical" hrefLang="en" href="http://simplelocalize.com/"/>
       </head>
       <body className={inter.className}>
-    
+    {/*
         <SectionProvider>
           <Header />
           {children}
           <Footer />
         </SectionProvider>
-        
+        */}
       </body>
     </html>
   );
